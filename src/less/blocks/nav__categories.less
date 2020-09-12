@@ -4,6 +4,10 @@
     height: 100%;
     align-items: center;
 
+    @media @smallnote{
+        display: none;
+    }
+
     &--link {
         position: relative;
 
@@ -12,13 +16,18 @@
         font-size: 1rem;
         font-weight: 900;
 
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
         text-transform: uppercase;
         text-decoration: none;
         color: #606060;
+
+        @media @largenote{
+            margin-left: 2.3rem;
+        }
+
+        @media @note{
+            margin-left: 1.4rem;
+            font-size: 0.8rem;
+        }
 
         &:first-child{
             margin-left: 0;

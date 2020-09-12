@@ -11,7 +11,11 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="build/css/style.css">
-    <link rel="stylesheet" href="build/css/vendor.css">
+    <!-- Slick css-->
+    <link rel="stylesheet" href="build/css/slick.css">
+    <!-- Owl css -->
+    <link rel="stylesheet" href="build/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="build/css/owl.theme.default.min.css">
 
     <meta name="description" content="Page description">
     <meta name="Keywords" content="Web development">
@@ -75,7 +79,11 @@
                             </div>
                         </nav>
                     </div>
+                    
                     <div class="header__tools">
+                        <button class="burger" id="burger" type="button">
+                            <span class="burger__item">Menu</span>
+                        </button>
                         <form class="header__search" action="/" method="POST">
                             <input class="header__search--input" type="text" name="name" placeholder="">
                             <button class="header__search--button" type="submit">
@@ -139,15 +147,87 @@
                 <div class="product__content">
                     <div class="product__preview">
                         <div class="product__slider">
-                            123
+                            <div class="product__item">
+                                <img class="product__image" src="build/images/product/bitmap.png"
+                                    srcset="build/images/product/bitmap@2x.png 2x,
+                                    build/images/product/bitmap@3x.png 3x"/>
+                            </div>
                         </div>
                         <div class="product__create">
-                            123
+                            
                         </div>
                     </div>
 
                     <div class="product__options">
-                        123
+                        <div class="product__decription">
+                            <div class="product__cons">
+                                <div class="product__cons--item">
+                                    Free Shipping Over $60
+                                </div>
+                                <div class="product__cons--item">
+                                    Afterpay over $60
+                                </div>
+                                <div class="product__cons--item">
+                                    Printed in 1-3 Days*
+                                </div>
+                            </div>
+                            <div class="pruduct__name">
+                                Designer School Labels Value Kit
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rating">
+                                    <div class="product__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="product__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="product__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="product__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="product__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="product__reviews">
+                                    <a href="#">345 reviews</a>
+                                </div>
+                            </div>
+                            <div class="product__prices">
+                                <div class="product__price--main">
+                                    <div class="product__price--cash">
+                                        <div class="product__price--old">
+                                            $29.95
+                                        </div>
+                                        <div class="product__price--new">
+                                            $24.95
+                                        </div>
+                                        <div class="pruduct__price--for">
+                                            for 200 Labels
+                                        </div>
+                                    </div>
+                                    <div class="product__price--after">
+                                        or only&nbsp;<span>4 payments</span>&nbsp;of 6.25 with
+                                        <img src="build/images/product/afterpay-copy.png"
+                                            srcset="build/images/product/afterpay-copy@2x.png 2x,
+                                            build/images/product/afterpay-copy@3x.png 3x">
+                                    </div>
+                                </div>
+                                <div class="product__prices--description">
+                                    <p>See Product</p>
+                                    <p>Description ></p>
+                                </div>
+                            </div>
+                            <div class="product__produce">
+                                <img src="build/images/product/calendar.png"
+                                    srcset="build/images/product/calendar@2x.png 2x,
+                                    build/images/product/calendar@3x.png 3x">
+                                We will produce your order within 3-5 business days
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +240,7 @@
                 <div class="recommendations__title">
                     Recommended for you
                 </div>
-                <div class="recommendations__content">
+                <div class="owl-carousel ">
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
@@ -436,6 +516,116 @@
                             </div>
                         </div>
                     </div>
+                    <div class="recommendations__item">
+                        <div class="recommendations__visual">
+                            <div class="recommendations__image">
+                                <img src="build/images/recommendations/pr-1.png" srcset="build/images/recommendations/pr-1@2x.jpg 2x,
+                                            build/images/recommendations/pr-1@3x.jpg 3x">
+                            </div>
+                            <div class="recommendations__discount">
+                                15% Off
+                            </div>
+                            <div class="recommendations__like">
+                                <a href="#">
+                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
+                                            build/images/recommendations/path@3x.jpg 3x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recommendations__description">
+                            <div class="recommendations__name">
+                                <a href="#">Kids Large Drink Bottle</a>
+                            </div>
+                            <div class="recommendations__prices">
+                                <div class="recommendations__old-price">
+                                    $40.95
+                                </div>
+                                <div class="recommendations__discount-price">
+                                    $40.95
+                                </div>
+                            </div>
+                            <div class="recommendations__info">
+                                <div class="recommendations__rating">
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="recommendations__reviews">
+                                    <a href="#">345 reviews</a>
+                                </div>
+                            </div>
+                            <div class="recommendations__options">
+                                4 Avatars available
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendations__item">
+                        <div class="recommendations__visual">
+                            <div class="recommendations__image">
+                                <img src="build/images/recommendations/pr-1.png" srcset="build/images/recommendations/pr-1@2x.jpg 2x,
+                                            build/images/recommendations/pr-1@3x.jpg 3x">
+                            </div>
+                            <div class="recommendations__discount">
+                                15% Off
+                            </div>
+                            <div class="recommendations__like">
+                                <a href="#">
+                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
+                                            build/images/recommendations/path@3x.jpg 3x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="recommendations__description">
+                            <div class="recommendations__name">
+                                <a href="#">Kids Large Drink Bottle</a>
+                            </div>
+                            <div class="recommendations__prices">
+                                <div class="recommendations__old-price">
+                                    $40.95
+                                </div>
+                                <div class="recommendations__discount-price">
+                                    $40.95
+                                </div>
+                            </div>
+                            <div class="recommendations__info">
+                                <div class="recommendations__rating">
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="recommendations__star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="recommendations__reviews">
+                                    <a href="#">345 reviews</a>
+                                </div>
+                            </div>
+                            <div class="recommendations__options">
+                                4 Avatars available
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -449,7 +639,7 @@
                         Create an account & earn rewards with our…
                     </div>
                     <div class="bonus__logo">
-                        <img src="build/images/bonus/group-4-copy.png"
+                        <img class="bonus__image" src="build/images/bonus/group-4-copy.png"
                         srcset="build/images/bonus/img/group-4-copy@2x.png 2x,
                         build/images/bonus/img/group-4-copy@3x.png 3x">
                     </div>
@@ -533,7 +723,7 @@
             <div class="subscribe__inner">
                 <div class="subscribe__text">  
                     <div class="subscribe__logo">
-                        <img src="build/images/subscribe/love-a-deal.png"
+                        <img class="subscribe__image" src="build/images/subscribe/love-a-deal.png"
                             srcset="build/images/subscribe/love-a-deal@2x.png 2x,
                             build/images/subscribe/love-a-deal@3x.png 3x">
                     </div>
@@ -750,7 +940,11 @@
 
     <!-- JavaScript -->
     <script src="build/js/app.js"></script>
-    <script src="build/js/vendor.js"></script>
+    <!-- Slick js -->
+    <script src="build/js/slick.min.js"></script>
+    <!-- Owl js -->
+    <script src="build/js/owl.carousel.js"></script>
+    <script src="build/js/owl.carousel.min.js"></script>
 </body>
 
 </html>

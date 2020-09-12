@@ -4,6 +4,21 @@
     justify-content: space-between;
 
     padding: 2.5rem 3.25rem 2rem 3.25rem;
+
+    @media @note{
+        padding: 2.5rem 2.25rem 2rem 2.25rem;
+    }
+
+    @media @smallnote{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.subscribe__image{
+    @media @note{
+        max-width: 80%;
+    }
 }
 
 .subscribe__title{
@@ -13,6 +28,10 @@
     color: #2b6281;
 
     margin-top: 0.8125rem;
+
+    @media @smallnote{
+        margin-bottom: 0.5rem;
+    }
 }
 
 .subscribe__form {
@@ -20,7 +39,17 @@
     max-width: 776px;
     display: flex;
 
-    
+    @media @largenote{
+        width: 50%;
+    }
+
+    @media @smallnote{
+        width: 60%;
+    }
+
+    @media @largemobile{
+        width: 100%;
+    }
 }
 
 .subscribe__input {

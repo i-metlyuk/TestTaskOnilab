@@ -18,13 +18,31 @@
     padding: 1.25rem 3.25rem 1.25rem 3.25rem;
 
     background-color: #60c7d3;
+
+    @media @largemobile{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .social__text{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     line-height: 1.68;
     color: #fff;
+
+    @media @note{
+        font-size: 1.575rem;
+        text-align: center;
+    }
+
+    @media @smallnote{
+        font-size: 1.3rem;
+    }
+    
+    @media @largemobile{
+        font-size: 1.8rem;
+    }
 
     a{
         text-decoration: none;
@@ -42,6 +60,10 @@
 .social__links{
     display: flex;
     align-items: center;
+
+    @media @largemobile {
+        margin-top: 0.5rem;
+    }
 }
 
 .social__link{

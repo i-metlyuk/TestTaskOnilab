@@ -54,19 +54,34 @@ function styles() {
 function vendorLess() {
     //for all files './src/vendor/less/**/*.less'
     return gulp.src('./src/vendor/less/**/*.less')
-        //concatenation
-        .pipe(concat('vendor.less'))
         //less
         .pipe(less())
-        //clean css
-        .pipe(cleanCSS({
-            level: 2
-        }))
         //out file
         .pipe(gulp.dest('./build/css'))
         //reload browser
         .pipe(browserSync.stream())
 }
+
+//tasks for vendor css
+function vendorCss() {
+    //for all files './src/vendor/css/**/*.css'
+    return gulp.src('./src/vendor/css/**/*.css')
+        //out file
+        .pipe(gulp.dest('./build/css'))
+        //reload browser
+        .pipe(browserSync.stream())
+}
+
+//tasks for vendor js
+function vendorJs() {
+    //for all files './src/js/**/*.js'
+    return gulp.src('./src/vendor/js/**/*.js')
+        //out file
+        .pipe(gulp.dest('./build/js'))
+        //reload browser
+        .pipe(browserSync.stream())
+}
+
 
 //tasks for fonts
 function fonts() {
@@ -102,22 +117,6 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
-//tasks for vendor js
-function vendorJs() {
-    //for all files './src/js/**/*.js'
-    return gulp.src('./src/vendor/js/**/*.js')
-        //concatenation
-        .pipe(concat('vendor.js'))
-        //clean js
-        .pipe(uglify({
-            toplevel: true
-        }))
-        //out file
-        .pipe(gulp.dest('./build/js'))
-        //reload browser
-        .pipe(browserSync.stream())
-}
-
 function images() {
     return gulp.src('./src/images/**/*.*')
         .pipe(imagemin([]))
@@ -141,6 +140,8 @@ function watch() {
     gulp.watch('./src/less/**/*.less', styles)
     //watch on vendor less files
     gulp.watch('./src/vendor/less/**/*.less', vendorLess)
+    //watch on vendor less files
+    gulp.watch('./src/vendor/css/**/*.css', vendorCss)
     //watch on js files
     gulp.watch('./src/js/**/*.js', scripts)
     //watch on vendor js files
@@ -157,6 +158,8 @@ function watch() {
 gulp.task('styles', styles);
 //task for call funk vendorLess
 gulp.task('vendorLess', vendorLess);
+//task for call funk vendorLess
+gulp.task('vendorCss', vendorCss);
 //task for call funk scripts
 gulp.task('scripts', scripts);
 //task for call funk scripts
@@ -170,6 +173,6 @@ gulp.task('clean', clean);
 //task for call funk watch
 gulp.task('watch', watch);
 //task for build project
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, vendorLess, vendorJs, scripts, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, vendorLess, vendorCss, vendorJs, scripts, images, fonts)));
 //task for start server
 gulp.task('dev', gulp.series('build', 'watch'));

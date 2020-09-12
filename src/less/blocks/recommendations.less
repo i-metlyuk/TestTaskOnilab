@@ -1,5 +1,9 @@
 .recommendations__inner{
     padding: 3.25rem;
+
+    @media @note{
+        padding: 2.25rem;
+    }
 }
 
 .recommendations__title{
@@ -16,8 +20,49 @@
     justify-content: space-between;
 }
 
-.recommendations__item{
-    
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.owl-carousel {
+    .owl-nav {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+
+        .owl-prev, .owl-next {
+            
+            position: absolute;
+            height: 5rem;
+            width: 2.25rem;
+            
+            background-color: #fff !important;
+            border: none;
+            z-index: 100;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    }
 }
 
 .recommendations__visual{

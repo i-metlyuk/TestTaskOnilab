@@ -9,6 +9,15 @@
 
     align-items: center;
     justify-content: space-between;
+
+    @media @note{
+        padding: 1.125rem 2.25rem 1.1875rem 2.25rem;
+    }
+
+    @media @smallnote{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .bonus__title{
@@ -20,6 +29,16 @@
 
 .bonus__logo{
     margin-top: 0.25rem;
+
+    @media @smallnote{
+        margin-bottom: 0.5rem;
+    }
+}
+
+.bonus__image{
+    @media @note{
+        max-width: 90%;
+    }
 }
 
 .bonus__voucher{
@@ -30,6 +49,15 @@
     padding: 0.6875rem 4.6875rem 0.6875rem 4.75rem;
 
     background: #fff;
+
+    @media @largenote{
+        padding: 0.6875rem 3.1875rem 0.6875rem 3.25rem;
+    }
+
+    @media @note{
+        padding: 0.6875rem 1.1875rem 0.6875rem 1.25rem;
+        font-size: 1.275rem;
+    }
 }
 
 .bonus__sign{
@@ -47,6 +75,14 @@
         padding: 0.9375rem 4rem 0.9375rem 4rem;
 
         transition: background-color .2s linear, color .2s linear;
+
+        @media @largenote{
+            padding: .875rem 2rem;
+        }
+
+        @media @note{
+            font-size: 1rem;
+        }
 
         &:hover{
             background-color: #fff;
