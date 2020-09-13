@@ -8,6 +8,10 @@
     @media @largemobile{
         padding: 1rem 1.25rem 0;
     }
+
+    @media @mobile{
+        padding:0;
+    }
 }
 
 .product__breadcrumbs{
@@ -17,6 +21,10 @@
     font-size: 0.875rem;
 
     color: #9b9b9b;
+
+    @media @mobile{
+        display: none;
+    }
 
     span{
         margin-left: 0.3rem;
@@ -37,6 +45,20 @@
     }
 }
 
+.product__afterpay{
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-align: center;
+
+    margin: 0.3125rem 0 0.4375rem 0;
+
+    display: none;
+
+    @media @mobile{
+        display: block;
+    }
+}
+
 .product__content{
     padding-top: 0.75rem;
     display: flex;
@@ -46,17 +68,29 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    @media @mobile{
+        padding: 0;
+    }
 }
 
 .product__image{
     @media @note{
         max-width: 90%;
     }
+
+    @media @mobile{
+        max-width: 100%;
+    }
 }
 
 .product__options{
     @media @largemobile{
         margin-top: 1rem;
+    }
+
+    @media @mobile{
+        padding: 0 1rem;
     }
 }
 
@@ -65,6 +99,10 @@
     justify-content: center;
     border: solid 1px #e7e7e7;
     padding: 0.875rem 0 0.875rem 0;
+
+    @media @mobile{
+        display: none;
+    }
 }
 
 .product__cons--item{
@@ -102,6 +140,12 @@
     }
 }
 
+.product__title{
+    @media @mobile{
+        display: flex;
+    }
+}
+
 .pruduct__name{
     margin-top: 1.5rem;
 
@@ -111,6 +155,11 @@
 
     @media @smallnote{
         font-size: 1.6rem;
+        margin-top: 0;
+
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.33;
     }
 }
 
@@ -118,6 +167,11 @@
     display: flex;
 
     margin-top: 0.6875rem;
+
+    @media @mobile{
+        display: block;
+        margin-top: 0;
+    }
 }
 
 .product__rating{
@@ -143,6 +197,10 @@
     margin-left: 1.5rem;
 
     position: relative;
+
+    @media @mobile{
+        display: inline-block;
+    }
 
     a{
         color: #606060;
@@ -173,7 +231,10 @@
 
     @media @smallnote{
         flex-wrap: wrap;
-        
+    }
+
+    @media @mobile{
+        margin-top: 0.25rem;
     }
 }
 
@@ -187,6 +248,11 @@
     font-weight: normal;
     color: #606060;
     text-decoration: line-through;
+
+    @media @mobile{
+        font-size: 1.125rem;
+        font-weight: normal;  
+    }
 }
 
 .product__price--new{
@@ -195,6 +261,12 @@
     color: #ef689d;
     
     margin-left: 0.75rem;
+
+    @media @mobile{
+        font-size: 1.125rem;
+        font-weight: 900;
+        line-height: 1.33;
+    }
 }
 
 .pruduct__price--for{
@@ -205,20 +277,37 @@
     text-transform: uppercase;
 
     margin-left: 1rem;
+
+    @media @mobile{
+        display: none;
+    }
 }
 
 .product__price--after{
     display: flex;
+    align-items: center;
+
     margin-top: 0.75rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     color: #606060;
+
+    @media @mobile{
+        font-size: 0.8125rem;
+        font-weight: normal;
+        line-height: 1.85;
+
+        margin-top: 0.5rem;
+    }
 
     span{
         position: relative;
         display: inline-block;
 
         &:after{
+            position: absolute;
+            bottom: 0;
+
             display: block;
             content: "";
     
@@ -231,10 +320,18 @@
 
     img{
         margin-left: 0.5rem;
+        @media @mobile{
+            max-width: 77px;
+            height: auto;
+        }
     }
 }
 
-.product__prices--description{
+.product__price--image{
+    
+}
+
+.product__btn{
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -249,13 +346,32 @@
 
     transition: background-color 0.2s linear;
 
-    @media @smallnote{
-        margin-top: 0.5rem;
-        padding: 0.6875rem 3rem 0.6875rem 3rem;
+    &--preview{
+        display: none;
+
+        @media @mobile{
+            display: block;
+            max-width: 7.4375rem;
+            font-size: 0.8125rem;
+            font-weight: bold;
+            padding: 0.6875rem 1.25rem 0.8125rem 1.25rem;
+            margin: 0.5rem 0 0 auto;
+        }
     }
 
-    @media @largemobile{
-        padding: 0.6875rem 2rem 0.6875rem 2rem;
+    &--options{
+        @media @smallnote{
+            margin-top: 0.5rem;
+            padding: 0.6875rem 3rem 0.6875rem 3rem;
+        }
+    
+        @media @largemobile{
+            padding: 0.6875rem 2rem 0.6875rem 2rem;
+        }
+
+        @media @mobile{
+            display: none;
+        }
     }
 
     &:hover{
@@ -279,9 +395,21 @@
         font-size: 0.9rem;
     }
 
+    @media @mobile{
+        margin-top: 1rem;
+        justify-content: center;
+        font-size: 0.8125rem;
+        font-weight: bold;
+        line-height: 1.85;
+    }
+
     img{
         margin-right: 0.5rem;
         margin-left: 0;
+
+        @media @mobile{
+            display: none;
+        }
     }
 }
 

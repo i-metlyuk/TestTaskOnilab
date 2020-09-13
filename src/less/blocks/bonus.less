@@ -1,5 +1,9 @@
 .bonus{
     background-color: #d6f2ff;
+
+    @media @mobile{
+        display: none;
+    }
 }
 
 .bonus__inner{
@@ -41,6 +45,10 @@
     }
 }
 
+.bonus__content{
+    display: flex;
+}
+
 .bonus__voucher{
     font-size: 1.875rem;
     font-weight: bold;
@@ -61,7 +69,6 @@
 }
 
 .bonus__sign{
-    a{ /* stylelint-disable-line */ 
         font-size: 1.5rem;
         font-weight: 900;
 
@@ -85,8 +92,6 @@
         }
 
         &:hover{
-            background-color: #fff;
-            color: #ef689d;
+            background-color: #c72365;
         }
-    }
 }

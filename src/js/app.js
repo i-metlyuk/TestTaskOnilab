@@ -1,26 +1,26 @@
 /// <reference path="../../typings/globals/jquery/index.d.ts" />
 $(function () {
 
-    $('.owl-carousel').owlCarousel({
+    $('.recommendation__carousel').owlCarousel({
         items:5,
         loop:true,
         margin:10,
         responsiveClass:true,
         nav:true,
         navText: [
-            '<img src="build/images/recommendations/path-4-copy-2.png" srcset="build/images/recommendations/path-4-copy-2@2x.png 2x, build/images/recommendations/path-4-copy-2@3x.png 3x">',
-            '<img src="build/images/recommendations/path-3-copy-2.png" srcset="build/images/recommendations/path-3-copy-2@2x.png 2x, build/images/recommendations/path-3-copy-2@3x.png 3x">'
+            '<img src="build/images/recommendations/path-4-copy-2.png">',
+            '<img src="build/images/recommendations/path-3-copy-2.png">'
         ],
         
         responsive:{
             320:{
-                items:1,
-                stagePadding:30,
+                items:2,
+                stagePadding:22,
                 nav:false
             },
             575:{
                 items:2,
-                stagePadding:50,
+                stagePadding:47,
                 nav:false
             },
             770:{
@@ -39,10 +39,48 @@ $(function () {
         }
     });
 
+    $('.social__carousel').owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        nav:false,
+        dots:false,
+        
+        responsive:{
+            320:{
+                items:2,
+                stagePadding:22,
+                nav:false
+            },
+            575:{
+                items:2,
+                stagePadding:47,
+                nav:false
+            },
+            770:{
+                items:3,
+                nav: false,
+            },
+            990:{
+                items:4,
+                nav:false
+            }   
+        }
+    });
+
     $("#burger").on("click", function(event) {
         event.preventDefault();
 
         $(this).toggleClass('active');
         $("#nav").toggleClass("active");
+    });
+
+    $("#up").on("click", function(event){
+        event.preventDefault();
+
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500)
     });
 });

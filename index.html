@@ -11,8 +11,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="build/css/style.css">
-    <!-- Slick css-->
-    <link rel="stylesheet" href="build/css/slick.css">
     <!-- Owl css -->
     <link rel="stylesheet" href="build/css/owl.carousel.min.css">
     <link rel="stylesheet" href="build/css/owl.theme.default.min.css">
@@ -36,9 +34,7 @@
                 <div class="banner__title">
                     HUGE SCHOOL SALE NOW ON!!
                 </div>
-                <div class="banner__link">
-                    <a class="banner__btn" href="#">Grab These Deals</a>
-                </div>
+                <a class="banner__btn" href="#">Grab These Deals</a>
                 <div class="banner__time">
                     <span class="banner__time--bold">02</span> Days <span class="banner__time--bold">14</span> HRS
                 </div>
@@ -54,8 +50,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="build/images/header/logo-bsk.png"
-                        srcset="build/images/header/logo-bsk@2x.png 2x, build/images/header/logo-bsk@3x.png 3x">
+                    <img class="header__image" src="build/images/header/logo-bsk.png">
                 </div>
                 <div class="header__content">
                     <div class="header__menu">
@@ -87,27 +82,28 @@
                         <form class="header__search" action="/" method="POST">
                             <input class="header__search--input" type="text" name="name" placeholder="">
                             <button class="header__search--button" type="submit">
-                                <img class="header__search--ico" src="build/images/header/ic-search.png"
-                                    srcset="build/images/header/ic-search@2x.png 2x, build/images/header/ic-search@3x.png 3x">
+                                <img class="header__search--ico" src="build/images/header/ic-search.png">
                             </button>
                         </form>
+                        <div class="header__search--mobile">
+                            <a href="#">
+                                <img src="build/images/header/ic-search.png" alt="">
+                            </a>
+                        </div>
                         <div class="header__user">
                             <div class="header__likes">
                                 <a href="#">
-                                    <img src="build/images/header/ic-heart.png" srcset="build/images/header/ic-heart@2x.png 2x,
-                                    build/images/header/ic-heart@3x.png 3x">
+                                    <img src="build/images/header/ic-heart.png">
                                 </a>
                             </div>
                             <div class="header__profile">
                                 <a href="#">
-                                    <img src="build/images/header/ic-user.png" srcset="build/images/header/ic-user@2x.png 2x,
-                                    build/images/header/ic-user@3x.png 3x">
+                                    <img src="build/images/header/ic-user.png">
                                 </a>
                             </div>
                             <div class="header__basket">
                                 <a href="#">
-                                    <img src="build/images/header/ic-cart.png" srcset="build/images/header/ic-cart@2x.png 2x,
-                                    build/images/header/ic-cart@3x.png 3x">
+                                    <img src="build/images/header/ic-cart.png">
                                 </a>
                                 <div class="header__basket--counter">
                                     3
@@ -144,17 +140,19 @@
                     <span>></span>
                     <a href="#">Designer School Labels Value Kit</a>
                 </div>
+                <div class="product__afterpay">
+                    Afterpay over $60
+                </div>
                 <div class="product__content">
                     <div class="product__preview">
                         <div class="product__slider">
                             <div class="product__item">
-                                <img class="product__image" src="build/images/product/bitmap.png"
-                                    srcset="build/images/product/bitmap@2x.png 2x,
-                                    build/images/product/bitmap@3x.png 3x"/>
+                                <img class="product__image" src="build/images/product/bitmap.png">
                             </div>
                         </div>
-                        <div class="product__create">
-                            
+                        <div class="product__btn product__btn--preview">
+                            <p>See Product</p>
+                            <p>Description ></p>
                         </div>
                     </div>
 
@@ -171,29 +169,31 @@
                                     Printed in 1-3 Days*
                                 </div>
                             </div>
-                            <div class="pruduct__name">
-                                Designer School Labels Value Kit
-                            </div>
-                            <div class="product__info">
-                                <div class="product__rating">
-                                    <div class="product__star">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="product__star">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="product__star">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="product__star">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="product__star">
-                                        <i class="fas fa-star"></i>
-                                    </div>
+                            <div class="product__title">
+                                <div class="pruduct__name">
+                                    Designer School Labels Value Kit
                                 </div>
-                                <div class="product__reviews">
-                                    <a href="#">345 reviews</a>
+                                <div class="product__info">
+                                    <div class="product__rating">
+                                        <div class="product__star">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="product__star">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="product__star">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="product__star">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="product__star">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product__reviews">
+                                        <a href="#">345 reviews</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product__prices">
@@ -211,20 +211,16 @@
                                     </div>
                                     <div class="product__price--after">
                                         or only&nbsp;<span>4 payments</span>&nbsp;of 6.25 with
-                                        <img src="build/images/product/afterpay-copy.png"
-                                            srcset="build/images/product/afterpay-copy@2x.png 2x,
-                                            build/images/product/afterpay-copy@3x.png 3x">
+                                        <img class="product__price--image" src="build/images/product/afterpay-copy.png">
                                     </div>
                                 </div>
-                                <div class="product__prices--description">
+                                <div class="product__btn product__btn--options">
                                     <p>See Product</p>
                                     <p>Description ></p>
                                 </div>
                             </div>
                             <div class="product__produce">
-                                <img src="build/images/product/calendar.png"
-                                    srcset="build/images/product/calendar@2x.png 2x,
-                                    build/images/product/calendar@3x.png 3x">
+                                <img src="build/images/product/calendar.png">
                                 We will produce your order within 3-5 business days
                             </div>
                         </div>
@@ -237,23 +233,24 @@
     <section class="recommendations" id="recommendations">
         <div class="container">
             <div class="recommendations__inner">
-                <div class="recommendations__title">
-                    Recommended for you
+                <div class="recommendations__intro">
+                    <div class="recommendations__title">
+                        Recommended for you
+                    </div>
+                    <a class="recommendations__view" href="#">View All</a>
                 </div>
-                <div class="owl-carousel ">
+                <div class="recommendation__carousel owl-carousel">
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1.png" srcset="build/images/recommendations/pr-1@2x.jpg 2x,
-                                            build/images/recommendations/pr-1@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1.png" >
                             </div>
                             <div class="recommendations__discount">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -287,9 +284,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">345 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">345 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 4 Avatars available
@@ -299,16 +294,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1-copy-2.png" srcset="build/images/recommendations/pr-1-copy-2@2x.jpg 2x,
-                                    build/images/recommendations/pr-1-copy-2@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1-copy-2.png" >
                             </div>
                             <div class="recommendations__discount">
                                 30% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -342,9 +335,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">345 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">345 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 35 Design Options
@@ -354,16 +345,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1-copy-4.png" srcset="build/images/recommendations/pr-1-copy-4@2x.jpg 2x,
-                                    build/images/recommendations/pr-1-copy-4@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1-copy-4.png">
                             </div>
                             <div class="recommendations__discount hide">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -397,9 +386,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">298 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">298 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 Lots of Colour Options
@@ -409,16 +396,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1-copy.png" srcset="build/images/recommendations/pr-1-copy@2x.jpg 2x,
-                                    build/images/recommendations/pr-1-copy@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1-copy.png">
                             </div>
                             <div class="recommendations__discount">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -452,9 +437,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">345 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">345 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 4 Avatars available
@@ -464,16 +447,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1-copy-4.png" srcset="build/images/recommendations/pr-1-copy-4@2x.jpg 2x,
-                                    build/images/recommendations/pr-1-copy-4@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1-copy-4.png">
                             </div>
                             <div class="recommendations__discount hide">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -507,9 +488,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">298 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">298 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 Lots of Colour Options
@@ -519,16 +498,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1.png" srcset="build/images/recommendations/pr-1@2x.jpg 2x,
-                                            build/images/recommendations/pr-1@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1.png">
                             </div>
                             <div class="recommendations__discount">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -562,9 +539,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">345 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">345 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 4 Avatars available
@@ -574,16 +549,14 @@
                     <div class="recommendations__item">
                         <div class="recommendations__visual">
                             <div class="recommendations__image">
-                                <img src="build/images/recommendations/pr-1.png" srcset="build/images/recommendations/pr-1@2x.jpg 2x,
-                                            build/images/recommendations/pr-1@3x.jpg 3x">
+                                <img src="build/images/recommendations/pr-1.png">
                             </div>
                             <div class="recommendations__discount">
                                 15% Off
                             </div>
                             <div class="recommendations__like">
                                 <a href="#">
-                                    <img src="build/images/recommendations/path.png" srcset="build/images/recommendations/path@2x.jpg 2x,
-                                            build/images/recommendations/path@3x.jpg 3x">
+                                    <img src="build/images/recommendations/path.png">
                                 </a>
                             </div>
                         </div>
@@ -617,9 +590,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="recommendations__reviews">
-                                    <a href="#">345 reviews</a>
-                                </div>
+                                <a class="recommendations__reviews" href="#">345 reviews</a>
                             </div>
                             <div class="recommendations__options">
                                 4 Avatars available
@@ -639,16 +610,14 @@
                         Create an account & earn rewards with our…
                     </div>
                     <div class="bonus__logo">
-                        <img class="bonus__image" src="build/images/bonus/group-4-copy.png"
-                        srcset="build/images/bonus/img/group-4-copy@2x.png 2x,
-                        build/images/bonus/img/group-4-copy@3x.png 3x">
+                        <img class="bonus__image" src="build/images/bonus/group-4-copy.png">
                     </div>
                 </div>
-                <div class="bonus__voucher">
-                    500 Points = $5 Voucher
-                </div>
-                <div class="bonus__sign">
-                    <a href="#">Sign up ></a>
+                <div class="bonus__content">
+                    <div class="bonus__voucher">
+                        500 Points = $5 Voucher
+                    </div>
+                    <a class="bonus__sign" href="#">Sign up ></a>
                 </div>
             </div>
         </div>
@@ -657,26 +626,19 @@
     <section class="social" id="social">
         <div class="container">
             <div class="social__inner">
-                <div class="social__photos">
+                <div class="social__carousel owl-carousel">
                     <div class="social__photo">
-                        <img src="build/images/social/ph-1.png"
-                        srcset="build/images/social/ph-1@2x.png 2x,
-                            build/images/social/ph-1@3x.png 3x">
+                        <img src="build/images/social/ph-1.png">
+                        <img class="social__label" src="build/images/social/label.png" alt="">
                     </div>
                     <div class="social__photo">
-                        <img src="build/images/social/ph-2.png"
-                        srcset="build/images/social/ph-2@2x.png 2x,
-                                build/images/social/ph-2@3x.png 3x">
+                        <img src="build/images/social/ph-2.png">
                     </div>
                     <div class="social__photo">
-                        <img src="build/images/social/ph-3.png"
-                        srcset="build/images/social/ph-3@2x.png 2x,
-                                build/images/social/ph-3@3x.png 3x">
+                        <img src="build/images/social/ph-3.png">
                     </div>
                     <div class="social__photo">
-                        <img src="build/images/social/ph-4.png"
-                        srcset="build/images/social/ph-4@2x.png 2x,
-                                build/images/social/ph-4@3x.png 3x">
+                        <img src="build/images/social/ph-4.png">
                     </div>
                 </div>
                 <div class="social__content">
@@ -686,30 +648,22 @@
                     <div class="social__links">
                         <div class="social__link">
                             <a href="#">
-                                <img src="build/images/social/fb.png"
-                                    srcset="build/images/social/fb@2x.png 2x,
-                                    build/images/social/fb@3x.png 3x">
+                                <img class="social__image" src="build/images/social/fb.png">
                             </a>
                         </div>
                         <div class="social__link">
                             <a href="#">
-                                <img src="build/images/social/inst.png"
-                                    srcset="build/images/social/inst@2x.png 2x,
-                                    build/images/social/inst@3x.png 3x">
+                                <img class="social__image" src="build/images/social/inst.png">
                             </a>
                         </div>
                         <div class="social__link">
                             <a href="#">
-                                <img src="build/images/social/blog-copy.png"
-                                    srcset="build/images/social/blog-copy@2x.png 2x,
-                                    build/images/social/blog-copy@3x.png 3x">
+                                <img class="social__image" src="build/images/social/blog-copy.png">
                             </a>
                         </div>
                         <div class="social__link">
                             <a href="#">
-                                <img src="build/images/social/pin.png"
-                                    srcset="build/images/social/pin@2x.png 2x,
-                                    build/images/social/pin@3x.png 3x">
+                                <img class="social__image" src="build/images/social/pin.png">
                             </a>
                         </div>
                     </div>
@@ -723,9 +677,7 @@
             <div class="subscribe__inner">
                 <div class="subscribe__text">  
                     <div class="subscribe__logo">
-                        <img class="subscribe__image" src="build/images/subscribe/love-a-deal.png"
-                            srcset="build/images/subscribe/love-a-deal@2x.png 2x,
-                            build/images/subscribe/love-a-deal@3x.png 3x">
+                        <img class="subscribe__image" src="build/images/subscribe/love-a-deal.png">
                     </div>
                     <div class="subscribe__title">
                         Be in the know with our newsletter!
@@ -748,9 +700,7 @@
                     Back to top
                 </div> 
                 <div class="up__arrow">
-                    <img src="build/images/up/path-copy-3.png"
-                        srcset="build/images/up/path-copy-3@2x.png 2x,
-                        build/images/up/path-copy-3@3x.png 3x">
+                    <img src="build/images/up/path-copy-3.png">
                 </div>
             </div>
         </div>
@@ -787,52 +737,50 @@
                     </div>
                 </div>
                 <div class="footer__info">
+                    <div class="footer__text">
+                        <img src="build/images/footer/ic-shipping-truck-b.png" alt="">
+                        Free shipping & afterpay on all orders over $60
+                    </div>
                     <div class="footer__contacts">
                         <div class="footer__contacts--item">
                             <div class="footer__contacts--logo">
-                                <img src="build/images/footer/ic-chat.png"
-                                    srcset="build/images/footer/ic-chat@2x.png 2x,
-                                    build/images/footer/ic-chat@3x.png 3x">
+                                <img src="build/images/footer/ic-chat.png">
                             </div>
                             <div class="footer__contacts--content">
                                 <div class="footer__contacts--title">
                                     Live chat
                                 </div>
                                 <div class="footer__contacts--text">
-                                    <p>7 Days</p>
-                                    <p>8am to Midnight (AEST)</p>
+                                    7 Days <br>
+                                    8am to Midnight (AEST)
                                 </div>
                             </div>
                         </div>
                         <div class="footer__contacts--item">
                             <div class="footer__contacts--logo">
-                                <img src="build/images/footer/ic-phone.png"
-                                    srcset="build/images/footer/ic-phone@2x.png 2x,
-                                    build/images/footer/ic-phone@3x.png 3x">
+                                <img src="build/images/footer/ic-phone.png">
                             </div>
                             <div class="footer__contacts--content">
                                 <div class="footer__contacts--title">
                                     Call us
                                 </div>
                                 <div class="footer__contacts--text">
-                                    <p>1300 668 997</p>
-                                    <p>Mon - Fri  |  8am - 4pm</p>
+                                    1300 668 997<br>
+                                    Mon - Fri  |  8am - 4pm
                                 </div>
                             </div>
                         </div>
                         <div class="footer__contacts--item">
                             <div class="footer__contacts--logo">
-                                <img src="build/images/footer/ic-mail.png"
-                                    srcset="build/images/footer/ic-mail@2x.png 2x,
-                                    build/images/footer/ic-mail@3x.png 3x">
+                                <img src="build/images/footer/ic-mail.png">
                             </div>
                             <div class="footer__contacts--content">
                                 <div class="footer__contacts--title">
                                     Email us
                                 </div>
                                 <div class="footer__contacts--text">
-                                    <p>Our  team will</p>
-                                    <p>reply within 1 business day</p>
+                                    Our  team will<br>
+                                    reply within 1 business day
                                 </div>
                             </div>
                         </div>
@@ -844,37 +792,27 @@
                             </div>
                             <div class="footer__delivery--content">
                                 <div class="footer__delivery--logo">
-                                    <img src="build/images/footer/ic-print.png"
-                                        srcset="build/images/footer/ic-print@2x.png 2x,
-                                        build/images/footer/ic-print@3x.png 3x">
+                                    <img src="build/images/footer/ic-print.png">
                                 </div>
                                 <div class="footer__delivery--text">
                                     <p>Production</p>
                                     <p>2-3 days</p>
                                 </div>
                                 <div class="footer__delivery__sumbol">
-                                    <img src="build/images/footer/ic-plus.png"
-                                        srcset="build/images/footer/ic-plus@2x.png 2x,
-                                        build/images/footer/ic-plus@3x.png 3x">
+                                    <img src="build/images/footer/ic-plus.png">
                                 </div>
                                 <div class="footer__delivery--logo">
-                                    <img src="build/images/footer/ic-shipping-truck.png"
-                                        srcset="build/images/footer/ic-shipping-truck@2x.png 2x,
-                                        build/images/footer/ic-shipping-truck@3x.png 3x">
+                                    <img src="build/images/footer/ic-shipping-truck.png">
                                 </div>
                                 <div class="footer__delivery--text">
                                     <p>Transport</p>
                                     <p>4-5 days</p>
                                 </div>
                                 <div class="footer__delivery__sumbol">
-                                    <img src="build/images/footer/ic-equal.png"
-                                        srcset="build/images/footer/ic-equal@2x.png 2x,
-                                        build/images/footer/ic-equal@3x.png 3x">
+                                    <img src="build/images/footer/ic-equal.png">
                                 </div>
                                 <div class="footer__delivery--logo">
-                                    <img src="build/images/footer/ic-home.png"
-                                        srcset="build/images/footer/ic-home@2x.png 2x,
-                                        build/images/footer/ic-home@3x.png 3x">
+                                    <img src="build/images/footer/ic-home.png">
                                 </div>
                                 <div class="footer__delivery--text">
                                     <p>Delivery</p>
@@ -886,31 +824,24 @@
                             <div class="footer__payment--title">
                                 Payment methods
                             </div>
+                            <div class="footer__payment--text">
+                                We make it easy to shop at bright star kids
+                            </div>
                             <div class="footer__payment--content">
                                 <div class="footer__payment--item">
-                                    <img src="build/images/footer/amex.png"
-                                        srcset="build/images/footer/amex@2x.png 2x,
-                                        build/images/footer/amex@3x.png 3x">
+                                    <img src="build/images/footer/amex.png">
                                 </div>
                                 <div class="footer__payment--item">
-                                    <img src="build/images/footer/visa.png"
-                                        srcset="build/images/footer/visa@2x.png 2x,
-                                        build/images/footer/visa@3x.png 3x">
+                                    <img src="build/images/footer/visa.png">
                                 </div>
                                 <div class="footer__payment--item">
-                                    <img src="build/images/footer/master.png"
-                                        srcset="build/images/footer/master@2x.png 2x,
-                                        build/images/footer/master@3x.png 3x">
+                                    <img src="build/images/footer/master.png">
                                 </div>
                                 <div class="footer__payment--item">
-                                    <img src="build/images/footer/pay-pal.png"
-                                        srcset="build/images/footer/pay-pal@2x.png 2x,
-                                        build/images/footer/pay-pal@3x.png 3x">
+                                    <img src="build/images/footer/pay-pal.png">
                                 </div>
                                 <div class="footer__payment--item">
-                                    <img src="build/images/footer/afterpay.png"
-                                        srcset="build/images/footer/afterpay@2x.png 2x,
-                                        build/images/footer/afterpay@3x.png 3x">
+                                    <img src="build/images/footer/afterpay.png">
                                 </div>
                             </div>
                         </div>
@@ -940,8 +871,6 @@
 
     <!-- JavaScript -->
     <script src="build/js/app.js"></script>
-    <!-- Slick js -->
-    <script src="build/js/slick.min.js"></script>
     <!-- Owl js -->
     <script src="build/js/owl.carousel.js"></script>
     <script src="build/js/owl.carousel.min.js"></script>

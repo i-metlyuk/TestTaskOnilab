@@ -16,6 +16,11 @@
     @media @largemobile{
         padding: 1.25rem 1.375rem 1.25rem 0.75rem;
     }
+
+    @media @mobile{
+        padding: 0.5rem 1.375rem 0.5rem 1rem;
+        display: block;
+    }
 }
 
 .header__logo{
@@ -23,11 +28,31 @@
 
     @media @smallnote{
         margin-top: 0;
+        
     }
+}
+
+.header__image{
+    @media @largemobile{
+        height: 39px;
+        max-width: 39px;
+    }
+    
 }
 
 .header__content{
     margin-left: 2.5rem;
+
+    @media @mobile{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .header__menu{
@@ -45,6 +70,14 @@
         position: relative;
         padding-left: 2.5rem;
     }
+
+    @media @mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 }
 
 .header__search {
@@ -60,6 +93,10 @@
 
     @media @smallnote{
         width: 60%;
+    }
+
+    @media @mobile{
+        display: none;
     }
 
     &--input {
@@ -116,9 +153,24 @@
     }
 }
 
+.header__search--mobile{
+    display: none;
+
+    @media @mobile{
+        display: block;
+        position: relative;
+        left:20%
+    }
+}
+
 .header__user{
     display: flex;
     align-items: center;
+
+    @media @mobile{
+        position: absolute;
+        right: 0.8rem;
+    }
 }
 
 .header__likes{
@@ -126,6 +178,10 @@
 
     @media @smallnote{
         margin: 0 0.8rem;
+    }
+
+    @media @mobile{
+        display: none;
     }
 
     img{

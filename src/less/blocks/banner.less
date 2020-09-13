@@ -15,6 +15,12 @@
         display: block;
         text-align: center;
     }
+
+    @media @mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .banner__title{
@@ -32,21 +38,18 @@
     @media @largemobile{
         margin-bottom: 0.5rem;
     }
-}
 
-.banner__link{
-    margin-left: 2.5rem;
-
-    @media @note{
-        margin-left: 1.5rem;
-    }
-
-    @media @largemobile{
-        margin-left: 0;
+    @media @mobile{
+        font-size: 0.75rem;
+        font-weight: 900;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
     }
 }
 
 .banner__btn{
+    margin-left: 2.5rem;
+
     display: inline-block;
     vertical-align: top;
     padding: 0.3125rem 1.25rem 0.25rem 1.25rem;
@@ -66,6 +69,19 @@
 
     @media @smallnote{
         font-size: 0.625rem;
+    }
+
+    @media @note{
+        margin-left: 1.5rem;
+    }
+
+    @media @largemobile{
+        margin-left: 0;
+    }
+
+    @media @mobile{
+        padding: 0.0625rem 0.5rem 0.125rem 0.5rem;
+        border-radius: 2px;
     }
 
     &:focus {
@@ -98,6 +114,11 @@
         margin-left: 0;
     }
 
+    @media @mobile{
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+    }
+
     &--bold{
         font-weight: 900;
         line-height: 2;
@@ -113,15 +134,19 @@
         right: 4.5rem;
     }
 
-    @media @note{
+    @media @smallnote{
         bottom: 25%;
     }
 
     @media @largemobile{
         right: 0.4rem;
         top: 0.4rem;
+        
     }
     
+    @media @mobile{
+        display: none;
+    }
 }
 
 .banner__hide{
