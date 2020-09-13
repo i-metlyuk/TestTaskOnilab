@@ -1,0 +1,107 @@
+.nav__menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+
+    @media @largemobile {
+        width: 100%;
+        height: auto;
+
+        padding: 1rem;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+
+        display: none;
+
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+        text-align: center;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &--item{
+        display: flex;
+        align-items: center;
+
+        margin-left: 3rem;
+
+        @media @smallnote{
+            margin-left: 2rem;
+        }
+
+        @media @largemobile {
+            width: 100%;
+            margin-left: 0;
+            padding: 0.5rem 1rem;
+            
+        }
+
+        &:first-child{
+            margin-left: 0;
+        }
+
+        @media @mobile {
+            width: 100%;
+            margin-left: 0;
+            padding: 0.5rem 1rem;
+    
+            &:after {
+                bottom: 2px;
+            }
+        }
+    }
+
+    &--link {
+        position: relative;
+    
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #606060;
+    
+        &:after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: #606060;
+    
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            z-index: 1;
+    
+            transition: width .2s linear;
+        }
+    
+        &:hover:not(.nav__link--btn) {
+            &:after {
+                display: block;
+                width: 100%;
+            }
+        }
+    
+        
+    
+    }
+}
+
+.submenu{
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    width: 6px;
+    height: 6px;
+
+    border-top: 2px solid #606060;
+    border-right: 2px solid #606060;
+
+    transform: translateY(-50%) rotate(135deg);
+}
